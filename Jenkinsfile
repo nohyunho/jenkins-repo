@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Deploy') {
+      steps {
+        input(message: 'Should we continue?', submitter: 'admin')
+      }
+    }
+
   }
 }
