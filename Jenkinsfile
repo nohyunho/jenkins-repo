@@ -22,7 +22,8 @@ pipeline {
 
     stage('Terraform init') {
       steps {
-        sh '''cd terraform/
+        sh '''sleep 1000
+cd terraform/
 terraform init'''
       }
     }
